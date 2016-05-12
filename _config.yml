@@ -8,14 +8,15 @@ inc:
   # Company information
   company:      Konscience Labs
   url:          http://konsciencelabs.com/
-  facebook:     konsciencelabs
+  # facebook:     konsciencelabs
   twitter:      konsciencelabs
-  gplus:        '101183822199340201470'
+  # gplus:        '101183822199340201470'
   about_link:   /about
+  blog_link:    /blog
 
   # Product Information
-  product_link: /about
-  tagline:      "Check our products"
+  product_link: /product
+  # tagline:      "Check our products"
 
   # Comments
   disqus:
@@ -70,19 +71,6 @@ port:        4000
 baseurl:     /
 lsi:         false
 
-maruku:
-  use_tex:    false
-  use_divs:   false
-  png_engine: blahtex
-  png_dir:    images/latex
-  png_url:    /images/latex
-
-rdiscount:
-  extensions: []
-
-redcarpet:
-  extensions: []
-
 kramdown:
   auto_ids: true
   footnote_nr: 1
@@ -98,24 +86,3 @@ kramdown:
     coderay_tab_width: 4
     coderay_bold_every: 10
     coderay_css: style
-
-redcloth:
-  hard_breaks: true
-
-#
-# jekyll-assets: see more at https://github.com/ixti/jekyll-assets
-#
-assets:
-
-  dirname: assets
-  baseurl: /assets/
-  sources:
-    - _assets/javascripts
-    - _assets/stylesheets
-    - _assets/images
-  js_compressor: uglifier
-  css_compressor: sass
-  cachebust: none
-  cache: false
-  gzip: [ text/css, application/javascript ]
-  debug: false
