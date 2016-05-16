@@ -21,7 +21,7 @@ namespace :site do
 
   desc "Generate and publish blog to gh-pages"
   task :publish do
-    system "git add ."
+    # system "git add ."
     message = "Site updated at #{Time.now.utc}"
     system "git commit -m #{message.inspect}"
     system "git push origin master"
